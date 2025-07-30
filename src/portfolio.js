@@ -43,7 +43,7 @@ const socialMediaLinks = {
 const skillsSection = {
   title: "What I do",
   subTitle:
-    "Currently, I mainly focus on exploring computer graphics and ray tracing. However, I also enjoy doing computer vision and robotics related stuff.",
+    "Currently, I focus on exploring computer graphics and ray tracing. I also enjoy doing computer vision and robotics related stuff.",
   skills: [
     emoji(
       "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
@@ -84,26 +84,26 @@ const educationInfo = {
   display: true, // Set false to hide this section, defaults to true
   schools: [
     {
-      schoolName: "FA",
-      logo: require("./assets/images/logoHSCoburg.png"),
+      schoolName: "University of Erlangen-Nuremberg",
+      logo: require("./assets/images/fauLogo.png"),
       subHeader: "Master of Science in Computer Science",
-      duration: "September 2017 - April 2019",
-      desc: "Participated in the research of XXX and published 3 papers.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      duration: "Oct 2025 - Apr 2028",
+      desc: "",
+      descBullets: []
     },
     {
       schoolName: "UAS Coburg",
-      logo: require("./assets/images/logoHSCoburg.png"),
+      logo: require("./assets/images/uasLogo.png"),
       subHeader: "Bachelor of Science in Computer Science",
-      duration: "October 2021 - September 2025",
-      desc: "Took courses about Computer Graphics, Image Processing, Robotics, ...",
-      descBullets: ["Lorem ipsum dolor sit amet, consectetur adipiscing elit"]
+      duration: "Oct 2021 - Sep 2025",
+      desc: "Took courses about Computer Graphics, Image Processing, Robotics",
+      descBullets: []
     },
     {
-      schoolName: "Hermann Pistor Gymnasium, Sonneberg"
+      schoolName: "Hermann Pistor Gymnasium, Sonneberg",
+      logo: require("./assets/images/hpGymLogo.png"),
+      subHeader: "A Levels",
+      duration: "Sep 2013 - Jul 2021"
     }
   ]
 };
@@ -135,29 +135,34 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
+      role: "Working Student for Software Engineering",
+      company: "Brose Coburg",
       companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      date: "Mar 2024 – Feb 2025",
+      desc: "Working Student - Development Methods",
       descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+        "Developed multiple modules, including management of friction points and tolerance calculations utilizing CAD models",
+        "Prepared migration of a C# WPF application and libraries from .NET Framework 4.8 to .NET 8, refactoring majority of codebase",
+        "Optimized existing modules to increase automation and reduce error rates",
       ]
     },
     {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Software Engineer Intern",
+      company: "Brose Coburg",
+      companylogo: require("./assets/images/broseLogo.png"),
+      date: "Sep 2023 – Feb 2024",
+      desc: "Intern - Development Methods",
+      descBullets: [
+        "Automated the creation and modification of technical drawings using 3D CAD models",
+        "Developed a cross-application search module for complex queries on components"
+      ]
     },
     {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      role: "Student Assistant",
+      company: "MixedRealityLab UAS Coburg",
+      companylogo: require("./assets/images/uasLogo.png"),
+      date: "Feb 2023 – Aug 2023",
+      desc: "Student Assistant"
     }
   ]
 };
@@ -200,7 +205,7 @@ const bigProjects = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Achievement Section
@@ -261,7 +266,7 @@ const achievementSection = {
       ]
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Blogs Section
@@ -285,7 +290,7 @@ const blogSection = {
         "React is a JavaScript library for building User Interface. It is maintained by Facebook and a community of individual developers and companies."
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Talks Sections
@@ -304,7 +309,7 @@ const talkSection = {
       event_url: "https://www.facebook.com/events/2339906106275053/"
     }
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Podcast Section
@@ -317,7 +322,7 @@ const podcastSection = {
   podcast: [
     "https://anchor.fm/codevcast/embed/episodes/DevStory---Saad-Pasta-from-Karachi--Pakistan-e9givv/a-a15itvo"
   ],
-  display: true // Set false to hide this section, defaults to true
+  display: false // Set false to hide this section, defaults to true
 };
 
 // Resume Section
@@ -332,7 +337,7 @@ const resumeSection = {
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
   subtitle:
-    "Discuss a project or just want to say hi? My Inbox is open for all.",
+    "Feel free to reach out!.",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
 };
@@ -344,7 +349,7 @@ const twitterDetails = {
   display: true // Set true to display this section, defaults to false
 };
 
-const isHireable = false; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
+const isHireable = true; // Set false if you are not looking for a job. Also isHireable will be display as Open for opportunities: Yes/No in the GitHub footer
 
 export {
   illustration,
