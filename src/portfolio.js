@@ -45,13 +45,9 @@ const skillsSection = {
   subTitle:
     "Currently, I focus on exploring computer graphics and ray tracing. I also enjoy doing computer vision and robotics related stuff.",
   skills: [
-    emoji(
-      "⚡ Develop highly interactive Front end / User Interfaces for your web and mobile applications"
-    ),
-    emoji("⚡ Progressive Web Applications ( PWA ) in normal and SPA Stacks"),
-    emoji(
-      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
-    )
+    emoji("⚡ Shader Scripting using HLSL and GLSL"),
+    emoji("⚡ "),
+    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -101,7 +97,7 @@ const educationInfo = {
     },
     {
       schoolName: "Hermann Pistor Gymnasium, Sonneberg",
-      logo: require("./assets/images/hpGymLogo.png"),
+      logo: require("./assets/images/hpGymLogo2.png"),
       subHeader: "A Levels",
       duration: "Sep 2013 - Jul 2021"
     }
@@ -135,21 +131,21 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Working Student for Software Engineering",
+      role: "Software Engineering Working Student",
       company: "Brose Coburg",
-      companylogo: require("./assets/images/facebookLogo.png"),
+      companylogo: require("./assets/images/brose.png"),
       date: "Mar 2024 – Feb 2025",
       desc: "Working Student - Development Methods",
       descBullets: [
         "Developed multiple modules, including management of friction points and tolerance calculations utilizing CAD models",
         "Prepared migration of a C# WPF application and libraries from .NET Framework 4.8 to .NET 8, refactoring majority of codebase",
-        "Optimized existing modules to increase automation and reduce error rates",
+        "Optimized existing modules to increase automation and reduce error rates"
       ]
     },
     {
-      role: "Software Engineer Intern",
+      role: "Software Engineering Intern",
       company: "Brose Coburg",
-      companylogo: require("./assets/images/broseLogo.png"),
+      companylogo: require("./assets/images/brose.png"),
       date: "Sep 2023 – Feb 2024",
       desc: "Intern - Development Methods",
       descBullets: [
@@ -162,7 +158,11 @@ const workExperiences = {
       company: "MixedRealityLab UAS Coburg",
       companylogo: require("./assets/images/uasLogo.png"),
       date: "Feb 2023 – Aug 2023",
-      desc: "Student Assistant"
+      desc: "Student Assistant",
+      descBullets: [
+        "Experimenting with image stitching methods",
+        "Created python scripts to improve video and image annotation process"
+      ]
     }
   ]
 };
@@ -336,8 +336,7 @@ const resumeSection = {
 
 const contactInfo = {
   title: emoji("Contact Me ☎️"),
-  subtitle:
-    "Feel free to reach out!.",
+  subtitle: "Feel free to reach out!.",
   number: "+92-0000000000",
   email_address: "saadpasta70@gmail.com"
 };
