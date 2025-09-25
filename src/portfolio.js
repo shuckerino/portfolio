@@ -21,9 +21,9 @@ const illustration = {
 
 const greeting = {
   username: "Rinaldo Schuster",
-  title: "Hello there",
+  title: "Hi, I'm Rinaldo",
   subTitle: emoji(
-    "I am Rinaldo, a computer science undergrad with strong interest in visual computing. Currently, I am enrolled at UAS Coburg."
+    "I'm a computer science graduate student at FAU Erlangen-Nuremberg, passionate about visual computing and graphics. I love working on projects that connect research with real-world applications in imaging and simulation."
   ),
   resumeLink:
     "https://drive.google.com/file/d/1ofFdKF_mqscH8WvXkSObnVvC9kK7Ldlu/view?usp=sharing", // Set to empty to hide the button
@@ -47,7 +47,9 @@ const skillsSection = {
   skills: [
     emoji("⚡ Shader Scripting using HLSL and GLSL"),
     emoji("⚡ "),
-    emoji("⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean")
+    emoji(
+      "⚡ Integration of third party services such as Firebase/ AWS / Digital Ocean"
+    )
   ],
 
   /* Make Sure to include correct Font Awesome Classname to view your icon
@@ -131,7 +133,15 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineering Working Student",
+      role: "Working Student Software Development Engineer",
+      company: "AMD Munich",
+      companylogo: require("./assets/images/AMD_logo.webp"),
+      date: "since Nov 2025",
+      desc: "Working Student - GPU Architecture Team",
+      descBullets: []
+    },
+    {
+      role: "Working Student Software Engineering",
       company: "Brose Coburg",
       companylogo: require("./assets/images/brose.png"),
       date: "Mar 2024 – Feb 2025",
@@ -143,7 +153,7 @@ const workExperiences = {
       ]
     },
     {
-      role: "Software Engineering Intern",
+      role: "Intern Software Engineering",
       company: "Brose Coburg",
       companylogo: require("./assets/images/brose.png"),
       date: "Sep 2023 – Feb 2024",
